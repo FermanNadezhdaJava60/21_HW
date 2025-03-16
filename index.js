@@ -43,16 +43,15 @@ runBindTests();
 class Deferred {
   constructor() {
     this.callbacks = [];
-    this.result = undefined;
   }
 
   then(callback) {
     this.callbacks.push(callback);
-    return this;
+    
   }
 
   resolve(startValue) {
-    this.result = this.callbacks.reduce((acc, fun) => fun(acc), startValue);
+    return this.callbacks.reduce((acc, fun) => fun(acc), startValue);
   }
 }
 const d = new Deferred();
