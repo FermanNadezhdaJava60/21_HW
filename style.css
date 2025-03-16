@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.item {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.item_passed {
+    color:green;
+}
+.item_failed {
+    color: red
+}
+.summary {
+    font-size: 1.3rem;
+    font-style: italic;
+}
+.arranging {
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-style: italic;
+}
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2.5vh;
+}
